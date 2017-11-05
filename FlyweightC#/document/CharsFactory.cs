@@ -7,7 +7,7 @@ namespace Flyweight
 {
     class CharsFactory
     {
-        private Dictionary<char,Char> chars=new Dictionary<char,Char>();
+        private readonly Dictionary<char,Char> chars=new Dictionary<char,Char>();
         Char letter = null;
         public int NumberRepeatingChars;
 
