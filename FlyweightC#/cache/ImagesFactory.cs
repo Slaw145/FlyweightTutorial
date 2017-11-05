@@ -8,7 +8,7 @@ namespace Cache
 {
     class ImagesFactory
     {
-        public Dictionary<string, Images> imagesList = new Dictionary<string, Images>();
+        public readonly Dictionary<string, Images> imagesList = new Dictionary<string, Images>();
 
         Images images = null;
 
