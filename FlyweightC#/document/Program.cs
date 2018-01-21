@@ -1,12 +1,10 @@
-﻿using System;
-
 namespace Flyweight
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string document = "PRZYKLADOWY TEKST";
+            string document = "SAMPLE TEXT";
             char[] CharsInDocument = document.ToCharArray();
 
             ConsoleColor[] colors = new ConsoleColor[CharsInDocument.Length];
@@ -29,7 +27,7 @@ namespace Flyweight
                 letter.DisplayText();
             }
 
-            Console.WriteLine("\nLiczba powtarzajacych sie znakow: "+CharsFactory.NumberRepeatingChars);
+            Console.WriteLine("\nNumber of repeating characters: " + CharsFactory.NumberRepeatingChars);
 
             Console.ReadKey();
         }
