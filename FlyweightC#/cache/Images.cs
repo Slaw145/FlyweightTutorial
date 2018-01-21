@@ -1,8 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.RegularExpressions;
-
 namespace Cache
 {
     abstract class Images
@@ -15,10 +10,10 @@ namespace Cache
             this.NameImage = NameImage;
             this.TypeImage = TypeImage;
         }
-        
+
         public void DisplayTextImage()
         {
-            Console.WriteLine("Obrazek nazywa sie: "+ NameImage + " o formacie" + TypeImage);
+            Console.WriteLine("The picture has name: " + NameImage + " about format " + TypeImage);
         }
     }
 }
