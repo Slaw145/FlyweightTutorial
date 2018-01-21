@@ -1,22 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Flyweight
+abstract class Char
 {
-    abstract class Char
+    //internal state
+    protected char @char;
+
+    public Char(char @char)
     {
-        //stan wewnętrzny
-        protected char @char;
+        this.@char = @char;
+    }
 
-        public Char(char @char)
-        {
-            this.@char = @char;
-        }
-
-        public void DisplayText()
-        {
-            Console.Write(@char);
-        }
+    public void DisplayText()
+    {
+        Console.Write(@char);
     }
 }
