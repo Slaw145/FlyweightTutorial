@@ -1,7 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Flyweight
 {
     class CharP : Char
@@ -56,9 +52,16 @@ namespace Flyweight
     {
         public CharY() : base('Y') { }
     }
+    class CharM : Char
+    {
+        public CharM() : base('M') { }
+    }
+    class CharX : Char
+    {
+        public CharX() : base('X') { }
+    }
     class Space : Char
     {
         public Space() : base(' ') { }
     }
-
 }
