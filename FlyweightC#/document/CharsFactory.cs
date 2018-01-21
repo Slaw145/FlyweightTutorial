@@ -1,8 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 namespace Flyweight
 {
     class CharsFactory
@@ -10,7 +5,7 @@ namespace Flyweight
         private readonly Dictionary<char,Char> chars=new Dictionary<char,Char>();
         Char letter = null;
         public int NumberRepeatingChars;
-
+ 
         public Char GetChar(char GiveChar)
         {
             
@@ -61,6 +56,12 @@ namespace Flyweight
                         break;
                     case 'Y':
                         letter = new CharY();
+                        break;
+                    case 'M':
+                        letter = new CharM();
+                        break;
+                    case 'X':
+                        letter = new CharX();
                         break;
                     case ' ':
                         letter = new Space();
