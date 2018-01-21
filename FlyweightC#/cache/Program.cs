@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text.RegularExpressions;
-using System.Threading;
-
 namespace Cache
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wyswietl strone devman.pl");
+            Console.WriteLine("View website devman.pl");
 
-            Console.WriteLine("Zapisz dane do pamieci cache");
+            Console.WriteLine("Save the data to the cache memory");
 
-            string image1 = "obrazek1.jpg";
-            string image2 = "obrazek2.png";
-            string image3 = "obrazek3.png";
-            string image4 = "obrazek4.jpeg";
-            string image5 = "obrazek2.png";
-            string image6 = "obrazek3.jpg";
+            string image1 = "image1.jpg";
+            string image2 = "image2.png";
+            string image3 = "image3.png";
+            string image4 = "image4.jpeg";
+            string image5 = "image2.png";
+            string image6 = "image3.jpg";
 
             string[] images = new string[] { image1, image2, image3, image4, image5, image6 };
 
@@ -31,18 +25,18 @@ namespace Cache
                 letter.DisplayTextImage();
             }
 
-            Console.WriteLine("Zamknij strone devman.pl");
+            Console.WriteLine("Close the devman.pl website");
 
-            Console.WriteLine("Wyswietl ponownie strone devman.pl");
+            Console.WriteLine("Display the devman.pl page again");
 
-            Console.WriteLine("Na stronie sa takie obrazki");
+            Console.WriteLine("There are such pictures on the site");
 
             foreach (Images imagesTypes in factoryimages.imagesList.Values)
             {
-                Console.WriteLine(imagesTypes.NameImage+" typ formatu obrazka "+ imagesTypes.TypeImage);
+                Console.WriteLine(imagesTypes.NameImage + " type of image format " + imagesTypes.TypeImage);
             }
 
-            Console.WriteLine("Liczba obrazkow o takich samych nazwach i koncowkach "+ factoryimages.NumberRepeatingImages);
+            Console.WriteLine("The number of pictures with the same names and endings: " + factoryimages.NumberRepeatingImages);
 
             Console.ReadKey();
         }
